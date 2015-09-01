@@ -1,0 +1,7 @@
+fastlane_version "1.21.0"
+
+import_from_git(
+  url: 'git@github.com:viadeo/viadeo-mobile-tools.git',
+  branch: 'iOS',
+  path: 'fastlane/Fastfile'
+  )
