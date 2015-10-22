@@ -30,6 +30,7 @@ xcuserdata
 Pods/
 Podfile.lock
 
+# Carthage
 Carthage/Build
 
 ## Fastlane
