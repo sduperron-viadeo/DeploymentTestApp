@@ -33,6 +33,11 @@ Podfile.lock
 # Carthage
 Carthage/Build
 
+# Bundler
+.bundle
+.bin
+Gemfile.lock
+
 ## Fastlane
 **/fastlane/report.xml
 **/Beta/
