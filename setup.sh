@@ -12,4 +12,4 @@ fi
 bundle install --binstubs=.bin --path=.bundle
 bundle clean
 
-# useless comment
+# useless comment extended
