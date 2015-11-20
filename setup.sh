@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# useless comment
-
 if ! which bundle; then
   echo "Could not find `bundle`. Run [sudo] gem install bundle."
   exit 1
