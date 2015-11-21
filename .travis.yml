@@ -4,3 +4,4 @@ language: objective-c
 xcode_workspace: DeploymentTestApp.xcworkspace
 xcode_scheme: DeploymentTestApp
 
+# trigger on development
