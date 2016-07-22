@@ -165,6 +165,7 @@
 				523DEEB21B95846800A4555B /* Frameworks */,
 				523DEEB31B95846800A4555B /* Resources */,
 				7A740E0454A6E289C9C1F642 /* Copy Pods Resources */,
+				52894E741D4247BE005E035B /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -267,6 +268,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeploymentTestAppTests/Pods-DeploymentTestAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52894E741D4247BE005E035B /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -z $FABRIC_API_KEY ]; then\n    echo \"No FABRIC_API_KEY. Skipping step.\"\n    exit 0\nfi\nif [ -z FABRIC_BUILD_SECRET ]; then\n    echo \"No FABRIC_BUILD_SECRET. Skipping step.\"\n    exit 0\nfi\n\necho \"FABRIC_API_KEY: $FABRIC_API_KEY\"\necho \"FABRIC_BUILD_SECRET: $FABRIC_BUILD_SECRET\"\n\n\"${PODS_ROOT}/Fabric/run\" $FABRIC_API_KEY $FABRIC_BUILD_SECRET\n";
 			showEnvVarsInLog = 0;
 		};
 		7A740E0454A6E289C9C1F642 /* Copy Pods Resources */ = {
@@ -418,6 +434,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 40;
 				ENABLE_BITCODE = NO;
+				FABRIC_API_KEY = "";
+				FABRIC_BUILD_SECRET = "";
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +513,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 40;
 				ENABLE_BITCODE = NO;
+				FABRIC_API_KEY = bb5654e54eaf2b98562c1aab3d8c214dc233e4b1;
+				FABRIC_BUILD_SECRET = a0c5e6b107464dc2abfa3552ea57c6071ebf4fc57379d95438ca9b90436f699f;
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,6 +592,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 40;
 				ENABLE_BITCODE = NO;
+				FABRIC_API_KEY = "";
+				FABRIC_BUILD_SECRET = "";
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
