@@ -26,10 +26,6 @@ xcuserdata
 *.hmap
 *.ipa
 
-# CocoaPods
-Pods/
-Podfile.lock
-
 # Carthage
 Carthage/Build
 
