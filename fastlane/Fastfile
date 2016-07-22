@@ -1,17 +1,13 @@
 fastlane_version "1.21.0"
 
-import_from_git(
-  url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
-  branch: 'master',
-  path: 'ci/fastlane/Fastfile'
-  )
-import_from_git(
-  url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
-  branch: 'master',
-  path: 'app-deployment/fastlane/Fastfile'
-  )
-import_from_git(
-  url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
-  branch: 'master',
-  path: 'tools/fastlane/Fastfile'
-  )
+def import_viadeo_workflow(name, branch='master')
+  import_from_git(
+    url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
+    branch: branch,
+    path: "#{name}/fastlane/Fastfile"
+    )
+end
+
+import_viadeo_workflow('ci')
+import_viadeo_workflow('app-deployment')
+import_viadeo_workflow('tools')
