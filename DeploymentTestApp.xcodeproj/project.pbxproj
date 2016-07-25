@@ -44,6 +44,8 @@
 		523DEED01B95846900A4555B /* DeploymentTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentTestAppTests.swift; sourceTree = "<group>"; };
 		5244C7721BF266F8006ADE2B /* DeploymentTestApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeploymentTestApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		5244C7731BF266F9006ADE2B /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		52894E781D4641AA005E035B /* Pods-DeploymentTestApp.alpha.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-DeploymentTestApp.alpha.xcconfig"; path = "Pods/Target Support Files/Pods-DeploymentTestApp/Pods-DeploymentTestApp.alpha.xcconfig"; sourceTree = "<group>"; };
+		52894E791D4641AA005E035B /* Pods-DeploymentTestAppTests.alpha.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-DeploymentTestAppTests.alpha.xcconfig"; path = "Pods/Target Support Files/Pods-DeploymentTestAppTests/Pods-DeploymentTestAppTests.alpha.xcconfig"; sourceTree = "<group>"; };
 		A722A37796E70B834982E1C8 /* Pods-DeploymentTestAppTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeploymentTestAppTests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-DeploymentTestAppTests/Pods-DeploymentTestAppTests.beta.xcconfig"; sourceTree = "<group>"; };
 		B1F14A206CC5CA013F5D2BD2 /* Pods-DeploymentTestAppTests.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeploymentTestAppTests.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-DeploymentTestAppTests/Pods-DeploymentTestAppTests.distribution.xcconfig"; sourceTree = "<group>"; };
 		C4BC13C0EC8D6C8A083D787E /* libPods-DeploymentTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeploymentTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,9 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				29DFF31A5598EAB8FA1E154C /* Pods-DeploymentTestApp.debug.xcconfig */,
+				52894E781D4641AA005E035B /* Pods-DeploymentTestApp.alpha.xcconfig */,
 				FF760CD5E79577215F719D66 /* Pods-DeploymentTestApp.beta.xcconfig */,
 				DD6B4286A127EDEE3C374470 /* Pods-DeploymentTestApp.distribution.xcconfig */,
 				174BA5D8A3F9C59DAC995AD9 /* Pods-DeploymentTestAppTests.debug.xcconfig */,
+				52894E791D4641AA005E035B /* Pods-DeploymentTestAppTests.alpha.xcconfig */,
 				A722A37796E70B834982E1C8 /* Pods-DeploymentTestAppTests.beta.xcconfig */,
 				B1F14A206CC5CA013F5D2BD2 /* Pods-DeploymentTestAppTests.distribution.xcconfig */,
 			);
@@ -438,6 +442,7 @@
 				FABRIC_BUILD_SECRET = "";
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viadeo.DeploymentTestApp.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeploymentTestApp/DeploymentTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -517,6 +522,7 @@
 				FABRIC_BUILD_SECRET = a0c5e6b107464dc2abfa3552ea57c6071ebf4fc57379d95438ca9b90436f699f;
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viadeo.DeploymentTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeploymentTestApp/DeploymentTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -596,6 +602,7 @@
 				FABRIC_BUILD_SECRET = "";
 				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viadeo.DeploymentTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeploymentTestApp/DeploymentTestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -623,6 +630,86 @@
 			};
 			name = Distribution;
 		};
+		52894E751D463FDE005E035B /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "$(PROFILE_UDID)";
+				SDKROOT = iphoneos;
+			};
+			name = Alpha;
+		};
+		52894E761D463FDE005E035B /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52894E781D4641AA005E035B /* Pods-DeploymentTestApp.alpha.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 45;
+				ENABLE_BITCODE = NO;
+				FABRIC_API_KEY = bb5654e54eaf2b98562c1aab3d8c214dc233e4b1;
+				FABRIC_BUILD_SECRET = a0c5e6b107464dc2abfa3552ea57c6071ebf4fc57379d95438ca9b90436f699f;
+				INFOPLIST_FILE = DeploymentTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viadeo.DeploymentTestApp.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeploymentTestApp/DeploymentTestApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Alpha;
+		};
+		52894E771D463FDE005E035B /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52894E791D4641AA005E035B /* Pods-DeploymentTestAppTests.alpha.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeploymentTestAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeploymentTestApp.app/DeploymentTestApp";
+			};
+			name = Alpha;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +718,7 @@
 			buildConfigurations = (
 				523DEED21B95846900A4555B /* Debug */,
 				523DEEDA1B95852E00A4555B /* Beta */,
+				52894E751D463FDE005E035B /* Alpha */,
 				523DEEDD1B9585D700A4555B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -641,6 +729,7 @@
 			buildConfigurations = (
 				523DEED51B95846900A4555B /* Debug */,
 				523DEEDB1B95852E00A4555B /* Beta */,
+				52894E761D463FDE005E035B /* Alpha */,
 				523DEEDE1B9585D700A4555B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -651,6 +740,7 @@
 			buildConfigurations = (
 				523DEED81B95846900A4555B /* Debug */,
 				523DEEDC1B95852E00A4555B /* Beta */,
+				52894E771D463FDE005E035B /* Alpha */,
 				523DEEDF1B9585D700A4555B /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
