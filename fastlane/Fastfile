@@ -1,6 +1,6 @@
 fastlane_version "1.21.0"
 
-def import_viadeo_workflow(name, branch='master')
+def import_viadeo_workflow(name, branch='alpha_build')
   import_from_git(
     url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
     branch: branch,
