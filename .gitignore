@@ -36,7 +36,8 @@ Gemfile.lock
 
 ## Fastlane
 **/fastlane/report.xml
-**/Beta/
-**/Distribution/
+DeploymentTestApp Alpha/
+DeploymentTestApp Beta/
+DeploymentTestApp Distribution/
 Adhoc_*.mobileprovision
 AppStore_*.mobileprovision
