@@ -1,5 +1,9 @@
 fastlane_version "1.21.0"
 
+before_all do |lane, options|
+  select_xcode_version
+end
+
 def import_viadeo_workflow(name, branch='development')
   import_from_git(
     url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
