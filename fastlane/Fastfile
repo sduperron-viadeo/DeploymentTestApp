@@ -4,7 +4,7 @@ before_all do |lane, options|
   select_xcode_version
 end
 
-def import_viadeo_workflow(name, branch='development')
+def import_viadeo_workflow(name, branch='2.4.0')
   import_from_git(
     url: 'git@github.com:viadeo/viadeo-ios-ci-config.git',
     branch: branch,
