@@ -14,3 +14,9 @@ test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - cp $CIRCLE_ARTIFACTS/report.junit $CIRCLE_TEST_REPORTS/junit/test_report.xml
+
+deployment:
+  alpha:
+    tag: /alpha\/.*/
+    commands:
+      bundle exec fastlane alpha_build_and_upload
