@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let
-            version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
-            buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
+        guard
+            let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
+            let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String else {
                 return;
         }
         versionLabel.text = "\(version) (\(buildNumber))"
