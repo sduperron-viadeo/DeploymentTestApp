@@ -14,7 +14,7 @@ checkout:
 
 test:
   override:
-    - bundle exec fastlane run_tests
+    - echo "Turlututu"
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - cp $CIRCLE_ARTIFACTS/report.junit $CIRCLE_TEST_REPORTS/junit/test_report.xml
