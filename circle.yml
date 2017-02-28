@@ -9,10 +9,8 @@ checkout:
     - git submodule update --init
 
 test:
-  branch: development
   override:
     - bundle exec fastlane run_ci
   post:
-    - bash <(curl -s https://codecov.io/bash) -t $(CODECOV_REPO_TOKEN)
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - cp $CIRCLE_ARTIFACTS/report.junit $CIRCLE_TEST_REPORTS/junit/test_report.xml
