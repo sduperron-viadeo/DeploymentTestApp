@@ -23,4 +23,4 @@ deployment:
   alpha:
     tag: /alpha\/.*/
     commands:
-      bundle exec fastlane alpha_build_and_upload
+      - bundle exec fastlane alpha_build_and_upload
