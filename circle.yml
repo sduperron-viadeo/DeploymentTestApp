@@ -22,5 +22,6 @@ test:
 deployment:
   alpha:
     tag: /alpha\/.*/
+    owner: viadeo
     commands:
       - bundle exec fastlane alpha_build_and_upload
